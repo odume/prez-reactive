@@ -136,27 +136,24 @@ module.exports = function (grunt) {
                 tasks: 'css-core'
             },
             html: {
-                files: root.map(path = > path + '/*.html')
-},
-    markdown: {
-        files: root.map(path = > path + '/*.md'
-    )
-    }
-,
-    options: {
-        livereload: true
-    }
-},
+                files: root.map(path => path + '/*.html')
+            },
+            markdown: {
+                files: root.map(path => path + '/*.md')
+            }
+            ,
+            options: {
+                livereload: true
+            }
+        },
 
-    retire: {
-        js: ['js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js'],
-            node
-    :
-        ['.']
-    }
+        retire: {
+            js: ['js/reveal.js', 'lib/js/*.js', 'plugin/**/*.js'],
+            node:
+                ['.']
+        }
 
-})
-    ;
+    });
 
     // Dependencies
     grunt.loadNpmTasks('grunt-contrib-connect');
