@@ -1,0 +1,33 @@
+//task hello {
+//    doLast {
+//        println 'Hello, World!'
+//    }
+//}
+
+//////////////
+
+//task hello {
+//    doLast {
+//        print 'Hello, '
+//    }
+//}
+//
+//task world(dependsOn: hello) {
+//    doLast {
+//        println 'World!'
+//    }
+//}
+
+//////////////
+
+task hello << {
+    println 'Hello, World!'
+}
+
+hello.doFirst {
+    println '================='
+}
+
+hello.doLast {
+    println ':::::::::::::::::'
+}

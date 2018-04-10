@@ -1,0 +1,3 @@
+## Publishers are lazy ...
+
+![Lazy obs](https://jntakpe.github.io/dxp-training/resources/images/lazy.gif)
